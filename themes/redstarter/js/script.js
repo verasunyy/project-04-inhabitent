@@ -1,4 +1,4 @@
-(function($){
-    $('body').append('hello world');
+// (function($){
+//     // $('body').append('hello world');
 
-})(jQuery);
+// })(jQuery);

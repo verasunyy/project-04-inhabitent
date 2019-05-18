@@ -227,43 +227,43 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  src: url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  src: url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../assets/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-light-webfont.eot");
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../assets/fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("../assets/fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../assets/fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-light-webfont.eot");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../assets/fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("../../assets/fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../assets/fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../assets/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
-  src: url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../assets/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
@@ -276,10 +276,10 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather Web", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -332,7 +332,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: "Merriweather Web", sans-serif;
+  min-width: 300px; }
 
 *,
 *:before,
@@ -344,6 +346,29 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+h1, h2 {
+  line-height: 1.25; }
+
+h1 {
+  font-size: 38.4px;
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 33.6px;
+  font-size: 2.1rem; }
+
+h3 {
+  font-size: 28.8px;
+  font-size: 1.8rem; }
+
+a {
+  text-decoration: none; }
 
 blockquote,
 q {
@@ -614,6 +639,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.site-content {
+  padding: 3rem; }
+
 .sticky {
   display: block; }
 
@@ -648,6 +676,7 @@ a {
 .bypostauthor {
   display: block; }
 
+/* About */
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -712,3 +741,149 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  width: 100vw;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../assets/images/dark-wood.png"); }
+  @media only screen and (min-width: 600px) {
+    .site-footer {
+      height: 340px; } }
+  .site-footer h3 {
+    color: #d99054;
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+  .site-footer a {
+    color: #fff; }
+  .site-footer i {
+    width: 1.7rem;
+    font-size: 1.25rem; }
+  .site-footer .footer-content {
+    max-width: 1120px;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 3rem 1rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media only screen and (min-width: 600px) {
+      .site-footer .footer-content {
+        text-align: left; } }
+    @media only screen and (min-width: 1000px) {
+      .site-footer .footer-content {
+        padding: 3rem; } }
+    .site-footer .footer-content p {
+      margin-bottom: .5rem; }
+    .site-footer .footer-content .contact-info {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      height: 100%; }
+      @media only screen and (min-width: 600px) {
+        .site-footer .footer-content .contact-info {
+          -ms-flex-preferred-size: 35%;
+              flex-basis: 35%; } }
+      @media only screen and (min-width: 1000px) {
+        .site-footer .footer-content .contact-info {
+          -ms-flex-preferred-size: 25%;
+              flex-basis: 25%; } }
+    .site-footer .footer-content .business-hours {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      height: 100%; }
+      .site-footer .footer-content .business-hours .week-day {
+        font-weight: 600; }
+      @media only screen and (min-width: 600px) {
+        .site-footer .footer-content .business-hours {
+          -ms-flex-preferred-size: 35%;
+              flex-basis: 35%; } }
+      @media only screen and (min-width: 1000px) {
+        .site-footer .footer-content .business-hours {
+          -ms-flex-preferred-size: 25%;
+              flex-basis: 25%; } }
+    .site-footer .footer-content .footer-logo {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .site-footer .footer-content .footer-logo .footer-logo-image {
+        width: 50%;
+        margin: 1.75rem 0; }
+      @media only screen and (min-width: 600px) {
+        .site-footer .footer-content .footer-logo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          -ms-flex-preferred-size: 30%;
+              flex-basis: 30%;
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+          .site-footer .footer-content .footer-logo .footer-logo-image {
+            width: 70%; } }
+      @media only screen and (min-width: 1000px) {
+        .site-footer .footer-content .footer-logo {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%; }
+          .site-footer .footer-content .footer-logo .footer-logo-image {
+            width: 50%; } }
+  .site-footer .site-info {
+    max-width: 1120px;
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web", sans-serif; }

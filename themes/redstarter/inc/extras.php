@@ -41,7 +41,7 @@ add_action('login_head', 'inhabitent_login_logo');
 function inhaitent_home_link($url) {
 	//return $url .= 'download';
 	return get_bloginfo( 'url' );
-	//return home_url();
+	//return home_url();//home_url()is to go to the home page of the selected page
 	//return get_info('siteurl');
 }
 add_filter( 'login_headerurl', 'inhaitent_home_link' );
