@@ -3,15 +3,59 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
 }
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
+}
+
+.widget-area {
+  display: none;
+  padding: $widget-padding-narrow;
+  h2 {
+    @include font-size(1.5);
+    margin-bottom: 1.5rem;
+  }
+  ul {
+	  margin:0;
+	  list-style: none;
+	  padding:0;
+
+	  }
+
+  .widget {
+    padding-bottom: 1rem;
+  }
+  i {
+    width: 1.7rem;
+    font-size: 1.25rem;
+  }
+  p {
+	  @include font-size(0.9);
+    margin-bottom: 0.5rem;
+  }
+  .week-day{
+	  display:block;
+	  font-weight: 600;
+  }
+  @include tablet {
+    display: block;
+    flex-basis: 30%;
+  }
+  @include desktop{
+	p {
+		@include font-size(1);
+	}
+	padding: $widget-padding-normal;
+	.week-day{
+		display:inline;
+	}
+  }
 }

@@ -1,0 +1,38 @@
+.page-id-5{
+    .widget-area{
+        display:none;
+        @include tablet{
+            display:none;
+        }
+    }
+    .content-area{
+        border:none;
+        padding:0;
+        margin:0;
+    }
+    .post-5{
+        @include container-flex(column);
+    }
+    h2{
+        text-align: center;
+    }
+    .entry-header{
+        margin:0;
+        background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.2)), 
+        url(../../assets/images/about-hero.jpg);
+        background-size:cover;
+        background-position: bottom;
+        width:100vw;
+        height:100vh;
+        @include container-flex();
+        h1{
+            color: #fff;
+            font-size: 3rem;
+        }
+    }
+    .entry-content{
+        padding:3rem;
+        max-width: 1000px;
+        margin:0;
+    }
+}

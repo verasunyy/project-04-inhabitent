@@ -25,6 +25,7 @@ html {
 
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  color:$color__text-main;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: $font__accent;
@@ -47,6 +48,7 @@ h3{
 
 a{
  text-decoration: none;
+ color:$color__text-main;
 }
 
 blockquote,

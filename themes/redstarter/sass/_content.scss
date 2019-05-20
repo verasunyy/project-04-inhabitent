@@ -3,53 +3,93 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-.site-content{
-    padding:3rem;
+.site /*or hfeed*/ {
+  @include container-flex(column, flex-start, center);
+}
+.site-content {
+  width: 100vw;
+  max-width: $max-screen-size;
+  .entry-title,
+  .page-title {
+    margin-top: 0;
+  }
+  h2,
+  h3 {
+    letter-spacing: 1.5px;
+  }
+  .content-area {
+	  padding:$content-padding-narrow;
+	  @include desktop{
+
+		  padding: $content-padding-normal;
+	  }
+
+    .google-map {
+      width: 100%;
+      height: 300px;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @include tablet {
+    @include container-flex();
+    align-items: flex-start;
+    .content-area {
+      flex-basis: 70%;
+      height: 100%;
+      border-right: $border-solid;
+    }
+  }
+  //   @include desktop {
+
+  //   }
 }
 
 .sticky {
-	display: block;
+  display: block;
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
-	display: none;
+.updated:not(.published) {
+  display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+  display: inline;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+  margin: $base__space-unit 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
+  clear: both;
+  margin: 0 0 $base__space-unit;
 }
 
 /* Asides */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+  display: none;
 }
 
 /* Comments */
 
 .comment-content a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 .bypostauthor {
-	display: block;
+  display: block;
 }
 
 /* About */
-

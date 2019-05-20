@@ -14,6 +14,9 @@
 
   a{
       color:#fff;
+    &:hover{
+    text-decoration: underline;
+    }
   }
   i{
       width:1.7rem;
@@ -25,13 +28,13 @@
     width:100%;
     flex-grow: 1;
     flex-wrap: wrap;
-    padding:3rem 1rem;
+    padding:$footer-padding-narrow;
     text-align:center;
     @include tablet{
       text-align:left;
     }
     @include desktop{
-      padding:3rem;
+      padding:$footer-padding-normal;
     }
     @include container-flex();
     p{
