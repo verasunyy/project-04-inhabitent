@@ -5,15 +5,11 @@
 html {
   box-sizing: border-box;
   @include font-size(1);
-  // @include tablet{
-  //   @include font-size(1);
-  // }
-  // @include desktop{
-  //   @include font-size(1);
-  // }
   font-family: $font__main;
-  // line-height: $base__line-height;
   min-width: 300px;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin:0 auto;
 }
 
 *,
