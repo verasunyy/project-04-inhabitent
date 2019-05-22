@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: All
+ * Template Name: Find Us
  * The template for displaying all pages.
  * 
  *

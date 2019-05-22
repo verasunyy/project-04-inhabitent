@@ -3,109 +3,111 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-.site /*or hfeed*/ {
-  @include container-flex(column, flex-start, center);
-}
-.site-content {
-  width: 100vw;
-  max-width: $max-screen-size;
-  .entry-title,
-  .page-title {
-    margin-top: 0;
+.post,
+.blog,
+.single-post,
+.page-template-page-find-us {
+  .site /*or hfeed*/ {
+    @include container-flex(column, flex-start, center);
   }
-  h2,
-  h3 {
-    letter-spacing: 1.5px;
-  }
-  .content-area {
-	  padding:$content-padding-narrow;
-	  @include desktop{
 
-		  padding: $content-padding-normal;
-	  }
+  .site-content {
+    width: 100vw;
+    max-width: $max-screen-size;
+    .entry-title,
+    .page-title {
+      margin-top: 0;
+    }
+    h2,
+    h3 {
+      letter-spacing: 1.5px;
+    }
+    .content-area {
+      padding: $content-padding-narrow;
+      @include desktop {
+        padding: $content-padding-normal;
+      }
 
-    .google-map {
-      width: 100%;
-      height: 300px;
-      iframe {
+      .google-map {
         width: 100%;
-        height: 100%;
+        height: 300px;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
-  }
 
-  @include tablet {
-    @include container-flex();
-    align-items: flex-start;
-    .content-area {
-      flex-basis: 70%;
-      height: 100%;
-      border-right: $border-solid;
+    @include tablet {
+      @include container-flex();
+      align-items: stretch;
+      .content-area {
+        flex-basis: 70%;
+        height: 100%;
+      }
     }
   }
 }
 
 /* Post and Posts */
-.post{
-  .entry-header{
+.post {
+  .entry-header {
     position: relative;
-    font-family:$font__accent;
-    color:#fff;
-    img{
-      width:100%;
+    font-family: $font__accent;
+    color: #fff;
+    img {
+      width: 100%;
     }
-    h1, h2{
+    h1,
+    h2 {
       position: absolute;
-      top:15px;
-      background:$color__green-brand;
+      top: 15px;
+      background: $color__green-brand;
       font-size: 1.75rem;
-      max-width:600px;
-      padding:.5rem .8rem;
-      @include tablet{
-        max-width:580px;
+      max-width: 600px;
+      padding: 0.5rem 0.8rem;
+      @include tablet {
+        max-width: 580px;
       }
-      @include desktop{
-        top:30px;
+      @include desktop {
+        top: 30px;
         font-size: 2.1rem;
-        padding:.8rem 1rem;
+        padding: 0.8rem 1rem;
       }
-      a{
-        color:#fff;
-        &:hover{
-          color:$color__yellow-brand;
+      a {
+        color: #fff;
+        &:hover {
+          color: $color__yellow-brand;
         }
       }
-      @include tablet{
-
+      @include tablet {
       }
-      @include desktop{
-
+      @include desktop {
       }
-
     }
-    .entry-meta{
-      background:$color__green-brand;
+    .entry-meta {
+      background: $color__green-brand;
       position: absolute;
-      bottom:0px;
-      right:0px;
+      bottom: 0px;
+      right: 0px;
       text-transform: uppercase;
-      color:#fff;
-      padding:0rem .8rem;
-      margin-bottom:8px;
-      a{
-        color:#fff;
+      color: #fff;
+      padding: 0rem 0.8rem;
+      margin-bottom: 8px;
+      a {
+        color: #fff;
       }
-      @include desktop{
-        padding:0.2rem 1rem;
+      @include desktop {
+        padding: 0.2rem 1rem;
       }
     }
   }
 
-  .entry-footer{
-    font-family:$font__accent;
+  .entry-footer {
+    font-family: $font__accent;
     text-transform: uppercase;
-    .cat-links{
-      padding-right:2rem;
+    .cat-links {
+      padding-right: 2rem;
     }
     @include container-flex(row, flex-start);
     flex-wrap: wrap;
@@ -155,4 +157,3 @@
 .bypostauthor {
   display: block;
 }
-

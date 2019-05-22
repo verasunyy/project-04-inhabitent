@@ -45,3 +45,13 @@ function inhaitent_home_link($url) {
 	//return get_info('siteurl');
 }
 add_filter( 'login_headerurl', 'inhaitent_home_link' );
+
+/* Try adding this to inc/extras.php and you should see more body classes based on the page name */
+function inhabitent_body_class_for_pages( $classes ) {
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] = 'page-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'inhabitent_body_class_for_pages' );
