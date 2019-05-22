@@ -5,11 +5,18 @@
 
 /* Front page */
 .home{
+    .site-header {
+        height: 0px;
+        width: 100vw;
+    }
     .site-content{
         @include container-flex(column);
+        h2 {
+            text-align: center;
+        }
     }
     .content-area{
-        border:none;
+        max-width: 1;
         padding:0;
         margin:0;
     }
@@ -27,10 +34,6 @@
                 width:100%;
             }
         }
-    }
-
-    .home-header{
-        text-align: center;
     }
     .home-container{
         display:grid;

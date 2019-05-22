@@ -948,6 +948,10 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home .site-header {
+  height: 0px;
+  width: 100vw; }
+
 .home .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,9 +966,11 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .home .site-content h2 {
+    text-align: center; }
 
 .home .content-area {
-  border: none;
+  max-width: 1;
   padding: 0;
   margin: 0; }
 
@@ -993,9 +999,6 @@ object {
     width: 280px; }
     .home .home-banner .home-logo-full img {
       width: 100%; }
-
-.home .home-header {
-  text-align: center; }
 
 .home .home-container {
   display: grid; }
@@ -1202,32 +1205,56 @@ object {
   .site-header-container img {
     max-height: 100%; }
 
-.page-template-page-about .site-header {
+.page-about .site-header {
   height: 0px;
   width: 100vw; }
 
-.page-template-page-about .content-area {
+.page-about .content-area {
   padding: 0;
   margin: 0; }
 
-.page-template-page-about .entry-header {
+.page-about .entry-header {
   display: none; }
 
-.page-template-page-about h2 {
+.page-about h2 {
   text-align: center; }
 
-.page-template-page-about .entry-content {
+.page-about .entry-content {
   padding: 0 0 3rem 0;
   margin: 0; }
-  .page-template-page-about .entry-content :not(.hero-image-header) {
+  .page-about .entry-content :not(.hero-image-header) {
     margin-left: auto;
     margin-right: auto;
     max-width: 900px; }
-  .page-template-page-about .entry-content .hero-image-header {
+  .page-about .entry-content .hero-image-header {
     height: 100vh;
     margin-bottom: 3rem; }
-    .page-template-page-about .entry-content .hero-image-header h1 {
+    .page-about .entry-content .hero-image-header h1 {
       color: #fff;
       font-size: 3rem; }
-  .page-template-page-about .entry-content p {
+  .page-about .entry-content p {
     padding: 0 3rem; }
+
+.single-adventure .site-header {
+  height: 0px;
+  width: 100vw; }
+
+.single-adventure .entry-header {
+  font-family: "Novecento Sans Web", sans-serif; }
+  .single-adventure .entry-header img {
+    width: 100vw; }
+  .single-adventure .entry-header .entry-title, .single-adventure .entry-header .entry-meta {
+    max-width: 950px;
+    padding: 0 3rem;
+    margin: auto; }
+  .single-adventure .entry-header .entry-title {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem; }
+  .single-adventure .entry-header .entry-meta {
+    font-size: 1.2rem;
+    text-transform: uppercase; }
+
+.single-adventure .entry-content {
+  max-width: 950px;
+  padding: 1rem 3rem 3rem;
+  margin: auto; }
