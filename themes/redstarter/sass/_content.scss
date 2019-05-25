@@ -6,11 +6,11 @@
 .post,
 .blog,
 .single-post,
-.page-template-page-find-us {
+.page-find-us,
+.error404 {
   .site /*or hfeed*/ {
     @include container-flex(column, flex-start, center);
   }
-
   .site-content {
     width: 100vw;
     max-width: $max-screen-size;
@@ -31,6 +31,8 @@
       .google-map {
         width: 100%;
         height: 300px;
+        margin:0;
+        padding:0;
         iframe {
           width: 100%;
           height: 100%;
@@ -45,6 +47,22 @@
         flex-basis: 70%;
         height: 100%;
       }
+    }
+  }
+}
+.error404{
+  ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
+  .content-area{
+    .search-submit{
+      display: none;
+    }
+    .search-field{
+      padding-left: 0.5rem 1rem;
+      text-transform: capitalize;
     }
   }
 }

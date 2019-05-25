@@ -9,7 +9,7 @@
 function inhabitent_post_type() {
 
 	$labels = array(
-		'name'                  => 'Products',
+		'name'                  => 'Shop Stuff',
 		'singular_name'         => 'Product',
 		'menu_name'             => 'Products',
 		'name_admin_bar'        => 'Product',
@@ -51,7 +51,7 @@ function inhabitent_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => 'products',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -72,7 +72,7 @@ add_action( 'init', 'inhabitent_post_type', 0 );
 function inhabitent_post_type_adventure() {
 
 	$labels = array(
-		'name'                  => 'Adventures',
+		'name'                  => 'Latest Adventures',
 		'singular_name'         => 'Adventure',
 		'menu_name'             => 'Adventures',
 		'name_admin_bar'        => 'Adventure',
@@ -114,7 +114,7 @@ function inhabitent_post_type_adventure() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => 'adventure',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',

@@ -55,3 +55,42 @@ function inhabitent_body_class_for_pages( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'inhabitent_body_class_for_pages' );
+
+/* set up the excerpt length */
+function inhabitent_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
+
+
+/* To change archive-product.php number of posts to show */
+
+function number_of_product_per_page($query){
+	if ( is_post_type_archive( 'product' ) ) {
+		$query->set( 'posts_per_page', 16);
+		return;
+	}
+	elseif(is_tax('product-type')){//need to be the name of the taxonomy
+		$query->set( 'posts_per_page', 4 );
+		return;
+	}elseif(is_post_type_archive('adventure')){
+		$query->set( 'posts_per_page', 4 );
+		return;
+	}
+}	
+add_action( 'pre_get_posts', 'number_of_product_per_page' );
+
+/* get rid of archive label */
+function my_theme_archive_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );

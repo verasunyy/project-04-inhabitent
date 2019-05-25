@@ -34,6 +34,9 @@
 
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i><i class="fas fa-bars"></i></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<span class="header-search">
+						<?php get_search_form(); ?>
+</span>
 				</nav><!-- #site-navigation -->
 				</div>
 				</div>

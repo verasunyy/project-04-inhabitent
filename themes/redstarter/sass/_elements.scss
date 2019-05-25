@@ -71,6 +71,7 @@ ol {
 
 ul {
   list-style: disc;
+
 }
 
 ol {
@@ -99,4 +100,22 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+input{
+  background:$color__background-screen;
+  &:focus{
+    border-color:$color__orange-brand;
+  }
+}
+.main-navigation{
+  .search-form {
+    input.search-field {
+      // background:red;
+      &:focus{
+        border: none;
+        outline: 0;
+        background: skyblue;
+      }
+    }
+  }
 }
