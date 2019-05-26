@@ -13,14 +13,10 @@
 			<?php the_post_thumbnail('large'); ?>
 		<?php endif; ?>
 	</div>
-	<div class="product-content">
-		<header class="product-name">
+	<div class="product-info">
 			<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-		</header>
-		<div class="product-info">
 			<p class="product-price"><?php echo "$", CFS()->get('product_price'); ?></p>
 			<p class="product-description"><?php the_content(); ?></p>
 			<div class="social-buttons"></div>
-		</div>
 	</div>
 </article>

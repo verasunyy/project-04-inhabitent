@@ -33,7 +33,7 @@ get_header(); ?>
 					<div class="product-term">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="" />
 						<p><?php echo $term->description; ?></p>
-						<div class="read-more-btn"><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?> stuff</a></div>
+						<a class="read-more-btn" href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?> stuff</a>
 					</div>
 				<?php endforeach; ?>
 			</div>
@@ -68,10 +68,8 @@ get_header(); ?>
 						</div>
 						</div>
 						<div class="journal-entry-btn">
-						<div class="read-more-btn">
-							<a href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+							<a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
 						</div>
-		</div>
 						
 					</div>
 				<?php endforeach; wp_reset_postdata(); ?>
@@ -102,9 +100,7 @@ get_header(); ?>
 								<h3> <?php the_title(); ?></h3>
 							</a>
 						</div>
-						<div class="read-more-btn">
-							<a href="<?php echo get_the_permalink(); ?>">Read More</a>
-						</div>
+							<a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read More</a>
 						</div>
 					</div>
 				<?php endforeach; wp_reset_postdata(); ?>

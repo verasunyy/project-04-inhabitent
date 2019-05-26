@@ -103,19 +103,16 @@ table {
 }
 input{
   background:$color__background-screen;
-  &:focus{
-    border-color:$color__orange-brand;
-  }
 }
-.main-navigation{
-  .search-form {
-    input.search-field {
-      // background:red;
-      &:focus{
-        border: none;
-        outline: 0;
-        background: skyblue;
-      }
-    }
-  }
-}
+// .main-navigation{
+//   .search-form {
+//     input.search-field {
+//       // background:red;
+//       &:focus{
+//         border: none;
+//         outline: 0;
+//         background: skyblue;
+//       }
+//     }
+//   }
+// }

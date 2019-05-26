@@ -68,6 +68,9 @@ add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
 function number_of_product_per_page($query){
 	if ( is_post_type_archive( 'product' ) ) {
 		$query->set( 'posts_per_page', 16);
+		$query->set('order','ASC');
+		$query->set('orderby', 'meta_value_num' );
+		$query->set('meta_key', 'product_price');
 		return;
 	}
 	elseif(is_tax('product-type')){//need to be the name of the taxonomy

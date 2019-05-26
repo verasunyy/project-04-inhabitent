@@ -113,11 +113,12 @@ a {
 			padding-left:1.5rem;
 		}
 		.search-field{
-			// display:none;
+			display:none;
 			font-size:1rem;
 			font-family: $font__accent;
 			border:none;
 			background:transparent;
+			outline: 0;
 		}
 		.search-submit, .icon-search{
 			border:none;

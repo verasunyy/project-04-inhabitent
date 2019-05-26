@@ -4,19 +4,16 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>"  <?php post_class('single-product-container'); ?> ">
 	<div class="product-image">
 		<?php if (has_post_thumbnail()) : ?>
 			<a href="<?php echo get_the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
 		<?php endif; ?>
 	</div>
-	<div class="product-content">
-		<header class="product-name">
+	<div class="product-title">
 			<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
-			<span class="product-price"><?php echo "$", CFS()->get('product_price'); ?></span>
-		</div>
+			<p class="product-price"><?php echo "$", CFS()->get('product_price'); ?></p>
 	</div>
 </article>

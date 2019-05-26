@@ -60,9 +60,7 @@
       height: 70px;
     }
     .read-more-btn {
-      a {
-        color: #fff;
-      }
+      color: #fff;
       background: $color__green-brand;
       &:hover {
         background: #19625d;
@@ -136,16 +134,12 @@
           padding: 0 0.75rem;
         }
         .read-more-btn {
-          border: 1px solid #404040;
-          a {
-            color: $color__text-main;
-          }
+          border: 1px solid #404040;          
+          color: $color__text-main;          
           width: 9rem;
           &:hover {
-            background: $color__green-brand;
-            a {
-              color: #fff;
-            }
+            background: $color__green-brand;            
+            color: #fff;           
             border: none;
           }
         }
@@ -180,9 +174,8 @@
     }
     .adventure-entry {
       .read-more-btn {
-        a {
-          color: #fff;
-        }
+        display:block;
+        color: #fff;
         background: transparent;
         border: 1px solid #fff;
         width: 8rem;
