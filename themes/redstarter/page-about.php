@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About
+ *
  * The template for displaying about page.
  *
  * @package RED_Starter_Theme

@@ -80,6 +80,10 @@ function number_of_product_per_page($query){
 		$query->set( 'posts_per_page', 4 );
 		return;
 	}
+	elseif(is_search()){
+		$query->set( 'posts_per_page', 6 );
+		return;
+	}
 }	
 add_action( 'pre_get_posts', 'number_of_product_per_page' );
 

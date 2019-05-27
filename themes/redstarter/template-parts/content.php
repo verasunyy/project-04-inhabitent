@@ -25,7 +25,7 @@
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 		<div class="posts-read-more-btn">
-			<a href="<?php echo get_post_type_archive_link('adventure'); ?>">Read More &rarr;</a>
+			<a href="<?php echo get_permalink(); ?>">Read More &rarr;</a>
 		</div>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

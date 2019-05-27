@@ -1,5 +1,10 @@
 .post-type-archive-adventure{
 
+    .site-content{
+        .content-area{
+            flex-basis:100%;
+        }
+    }
     .content-area{
         width:100vw;
         @include container-flex();

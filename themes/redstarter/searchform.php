@@ -3,7 +3,7 @@
 
 		<button class="search-submit">
 			<span class="icon-search" aria-hidden="true">
-				<i class="fa fa-search"></i>
+				<a class="nav-toggle-search-icon"><i class="fa fa-search"></i></a>
 			</span>
 			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
 		</button>

@@ -111,6 +111,7 @@ a {
 		i{
 			font-size:1rem;
 			padding-left:1.5rem;
+			outline:none;
 		}
 		.search-field{
 			display:none;
@@ -163,5 +164,24 @@ a {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+.search-pagination{
+	height:5rem;
+	border-top:$border-solid;
+	padding-top:2rem;
+	.page-numbers{
+		background:$color__green-brand;
+		color:#fff;
+		padding:0.75rem 1rem;
+		margin-right:.5rem;
+	}
+	.dots{
+		background:none;
+		color:$color__text-main;
+	}
+	.current{
+		background:$color__medium-grey-brand;
 	}
 }
