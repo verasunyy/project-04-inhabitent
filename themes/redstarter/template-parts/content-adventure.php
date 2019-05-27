@@ -22,6 +22,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<?php get_template_part('template-parts/content', 'social-media-buttons');?>
 	</div><!-- .entry-content -->
 
 

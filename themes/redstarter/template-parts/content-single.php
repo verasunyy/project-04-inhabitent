@@ -32,5 +32,6 @@
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
+		<?php get_template_part('template-parts/content', 'social-media-buttons');?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -36,13 +36,13 @@
   }
   i {
     width: 1.7rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   p {
 	  @include font-size(0.9);
     margin-bottom: 0.5rem;
   }
-  .week-day{
+  .day-of-week{
 	  display:block;
 	  font-weight: 600;
   }
@@ -55,7 +55,7 @@
 		@include font-size(1);
 	}
 	padding: $widget-padding-normal;
-	.week-day{
+	.day-of-week{
 		display:inline;
 	}
   }

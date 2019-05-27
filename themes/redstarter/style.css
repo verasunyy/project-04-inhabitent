@@ -420,7 +420,7 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-input {
+input, textarea {
   background: #f1f1f1; }
 
 /*--------------------------------------------------------------
@@ -693,12 +693,12 @@ a {
     padding-bottom: 1rem; }
   .widget-area i {
     width: 1.7rem;
-    font-size: 1.25rem; }
+    font-size: 1rem; }
   .widget-area p {
     font-size: 14.4px;
     font-size: 0.9rem;
     margin-bottom: 0.5rem; }
-  .widget-area .week-day {
+  .widget-area .day-of-week {
     display: block;
     font-weight: 600; }
   @media only screen and (min-width: 600px) {
@@ -712,7 +712,7 @@ a {
       .widget-area p {
         font-size: 16px;
         font-size: 1rem; }
-      .widget-area .week-day {
+      .widget-area .day-of-week {
         display: inline; } }
 
 /*--------------------------------------------------------------
@@ -723,7 +723,8 @@ a {
 .blog .site,
 .single-post .site,
 .page-find-us .site,
-.error404 .site {
+.error404 .site,
+.archive .site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,7 +743,8 @@ a {
 .blog .site-content,
 .single-post .site-content,
 .page-find-us .site-content,
-.error404 .site-content {
+.error404 .site-content,
+.archive .site-content {
   width: 100vw;
   max-width: 1240px; }
   .post .site-content .entry-title,
@@ -754,7 +756,9 @@ a {
   .page-find-us .site-content .entry-title,
   .page-find-us .site-content .page-title,
   .error404 .site-content .entry-title,
-  .error404 .site-content .page-title {
+  .error404 .site-content .page-title,
+  .archive .site-content .entry-title,
+  .archive .site-content .page-title {
     margin-top: 0; }
   .post .site-content h2,
   .post .site-content h3,
@@ -765,26 +769,31 @@ a {
   .page-find-us .site-content h2,
   .page-find-us .site-content h3,
   .error404 .site-content h2,
-  .error404 .site-content h3 {
+  .error404 .site-content h3,
+  .archive .site-content h2,
+  .archive .site-content h3 {
     letter-spacing: 1.5px; }
   .post .site-content .content-area,
   .blog .site-content .content-area,
   .single-post .site-content .content-area,
   .page-find-us .site-content .content-area,
-  .error404 .site-content .content-area {
+  .error404 .site-content .content-area,
+  .archive .site-content .content-area {
     padding: 3rem 2rem 2rem 2rem; }
     @media only screen and (min-width: 1000px) {
       .post .site-content .content-area,
       .blog .site-content .content-area,
       .single-post .site-content .content-area,
       .page-find-us .site-content .content-area,
-      .error404 .site-content .content-area {
+      .error404 .site-content .content-area,
+      .archive .site-content .content-area {
         padding: 3rem 3rem 2rem 3rem; } }
     .post .site-content .content-area .google-map,
     .blog .site-content .content-area .google-map,
     .single-post .site-content .content-area .google-map,
     .page-find-us .site-content .content-area .google-map,
-    .error404 .site-content .content-area .google-map {
+    .error404 .site-content .content-area .google-map,
+    .archive .site-content .content-area .google-map {
       width: 100%;
       height: 300px;
       margin: 0;
@@ -793,15 +802,45 @@ a {
       .blog .site-content .content-area .google-map iframe,
       .single-post .site-content .content-area .google-map iframe,
       .page-find-us .site-content .content-area .google-map iframe,
-      .error404 .site-content .content-area .google-map iframe {
+      .error404 .site-content .content-area .google-map iframe,
+      .archive .site-content .content-area .google-map iframe {
         width: 100%;
         height: 100%; }
+  .post .site-content .posts-read-more-btn,
+  .blog .site-content .posts-read-more-btn,
+  .single-post .site-content .posts-read-more-btn,
+  .page-find-us .site-content .posts-read-more-btn,
+  .error404 .site-content .posts-read-more-btn,
+  .archive .site-content .posts-read-more-btn {
+    margin-bottom: 4rem; }
+    .post .site-content .posts-read-more-btn a,
+    .blog .site-content .posts-read-more-btn a,
+    .single-post .site-content .posts-read-more-btn a,
+    .page-find-us .site-content .posts-read-more-btn a,
+    .error404 .site-content .posts-read-more-btn a,
+    .archive .site-content .posts-read-more-btn a {
+      border: 1px solid black;
+      padding: 0.75rem 1.5rem;
+      color: black;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Web", sans-serif;
+      font-size: 14.4px;
+      font-size: 0.9rem; }
+      .post .site-content .posts-read-more-btn a:hover,
+      .blog .site-content .posts-read-more-btn a:hover,
+      .single-post .site-content .posts-read-more-btn a:hover,
+      .page-find-us .site-content .posts-read-more-btn a:hover,
+      .error404 .site-content .posts-read-more-btn a:hover,
+      .archive .site-content .posts-read-more-btn a:hover {
+        color: #fff;
+        background: #248A83; }
   @media only screen and (min-width: 600px) {
     .post .site-content,
     .blog .site-content,
     .single-post .site-content,
     .page-find-us .site-content,
-    .error404 .site-content {
+    .error404 .site-content,
+    .archive .site-content {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -822,30 +861,43 @@ a {
       .blog .site-content .content-area,
       .single-post .site-content .content-area,
       .page-find-us .site-content .content-area,
-      .error404 .site-content .content-area {
+      .error404 .site-content .content-area,
+      .archive .site-content .content-area {
         -ms-flex-preferred-size: 70%;
             flex-basis: 70%;
         height: 100%; } }
 
+archive page
 .error404 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
+archive page
 .error404 .content-area .search-submit {
   display: none; }
 
+archive page
 .error404 .content-area .search-field {
   padding-left: 0.5rem 1rem;
   text-transform: capitalize; }
 
 /* Post and Posts */
 .post .entry-header {
+  width: 100%;
+  height: 100%;
   position: relative;
   font-family: "Novecento Sans Web", sans-serif;
-  color: #fff; }
+  color: #fff;
+  background: black; }
   .post .entry-header img {
-    width: 100%; }
+    line-height: 0;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative; }
   .post .entry-header h1,
   .post .entry-header h2 {
     position: absolute;
@@ -873,12 +925,11 @@ a {
   .post .entry-header .entry-meta {
     background: #248A83;
     position: absolute;
-    bottom: 0px;
+    bottom: 8px;
     right: 0px;
     text-transform: uppercase;
     color: #fff;
-    padding: 0rem 0.8rem;
-    margin-bottom: 8px; }
+    padding: 0rem 0.8rem; }
     .post .entry-header .entry-meta a {
       color: #fff; }
     @media only screen and (min-width: 1000px) {
@@ -1582,6 +1633,7 @@ object {
 .single-adventure .entry-header {
   font-family: "Novecento Sans Web", sans-serif; }
   .single-adventure .entry-header img {
+    max-width: none;
     width: 100vw; }
   .single-adventure .entry-header .entry-title, .single-adventure .entry-header .entry-meta {
     max-width: 950px;
@@ -1615,6 +1667,12 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.5rem 3rem 4rem; }
+  @media only screen and (min-width: 600px) {
+    .post-type-archive-adventure .content-area {
+      padding: 1.5rem 1.5rem 4rem; } }
+  @media only screen and (min-width: 1000px) {
+    .post-type-archive-adventure .content-area {
+      padding: 1.5rem 3rem 4rem; } }
 
 .post-type-archive-adventure .site-main {
   max-width: 1240px;
@@ -1643,14 +1701,21 @@ object {
 .post-type-archive-adventure .adventure-container {
   padding-top: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 40vw;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 75vw;
   grid-gap: 1.5rem; }
+  @media only screen and (min-width: 600px) {
+    .post-type-archive-adventure .adventure-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 50vw; } }
+  @media only screen and (min-width: 1000px) {
+    .post-type-archive-adventure .adventure-container {
+      grid-auto-rows: 45vw; } }
 
 .post-type-archive-adventure .single-adventure-container {
-  border: 2px solid red;
   position: relative;
-  background: black; }
+  background: black;
+  overflow: hidden; }
   .post-type-archive-adventure .single-adventure-container img {
     width: 100%;
     height: 100%;
@@ -1662,6 +1727,12 @@ object {
     position: absolute;
     top: 0rem;
     padding: 2rem; }
+    @media only screen and (min-width: 600px) {
+      .post-type-archive-adventure .single-adventure-container .adventure-title {
+        padding: 1rem; } }
+    @media only screen and (min-width: 1000px) {
+      .post-type-archive-adventure .single-adventure-container .adventure-title {
+        padding: 2rem; } }
     .post-type-archive-adventure .single-adventure-container .adventure-title a {
       color: #fff;
       text-transform: uppercase;
@@ -1670,8 +1741,17 @@ object {
         text-transform: none;
         font-weight: 400;
         font-family: "Merriweather Web", sans-serif;
-        font-size: 3rem;
+        font-size: 32px;
+        font-size: 2rem;
         margin-bottom: 3rem; }
+        @media only screen and (min-width: 600px) {
+          .post-type-archive-adventure .single-adventure-container .adventure-title a h2 {
+            margin-bottom: 2rem; } }
+        @media only screen and (min-width: 1000px) {
+          .post-type-archive-adventure .single-adventure-container .adventure-title a h2 {
+            font-size: 48px;
+            font-size: 3rem;
+            margin-bottom: 3rem; } }
     .post-type-archive-adventure .single-adventure-container .adventure-title .read-more-btn {
       margin-top: 2rem;
       padding: 0.75rem 1.5rem;
@@ -1679,7 +1759,7 @@ object {
       .post-type-archive-adventure .single-adventure-container .adventure-title .read-more-btn:hover {
         background: #248A83; }
 
-.post-type-archive-product .content-area, .tax-product-type .content-area {
+.post-type-archive-product .site-content .content-area, .tax-product-type .site-content .content-area {
   width: 100vw;
   min-width: 300px;
   padding: 1.5rem 3rem 4rem;
@@ -1695,7 +1775,9 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
 
 .post-type-archive-product .site-main, .tax-product-type .site-main {
   max-width: 1240px;
@@ -1824,7 +1906,8 @@ object {
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: auto; } }
 
-.single-product .product-image {
+.single-product .product-image img {
+  max-width: none;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1839,3 +1922,28 @@ object {
   font-size: 1.8rem;
   font-family: "Novecento Sans Web", sans-serif;
   margin-top: 0; }
+
+.social-media-buttons {
+  margin: 1.5rem 0; }
+  .social-media-buttons button {
+    color: black;
+    padding: .75rem 1.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    text-shadow: none; }
+    .social-media-buttons button:hover {
+      background: #248A83;
+      color: #fff; }
+  .social-media-buttons i {
+    width: 1rem;
+    font-size: 12px;
+    font-size: 0.75rem; }

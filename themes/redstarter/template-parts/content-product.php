@@ -17,6 +17,6 @@
 			<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 			<p class="product-price"><?php echo "$", CFS()->get('product_price'); ?></p>
 			<p class="product-description"><?php the_content(); ?></p>
-			<div class="social-buttons"></div>
+			<?php get_template_part('template-parts/content', 'social-media-buttons');?>
 	</div>
 </article>
