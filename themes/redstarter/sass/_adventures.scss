@@ -78,6 +78,9 @@
                         margin-bottom:3rem;
                     }
                     margin-bottom:3rem;
+                    &:hover{
+                        color:$color__yellow-brand;
+                    }
                 }
             }
             .read-more-btn{

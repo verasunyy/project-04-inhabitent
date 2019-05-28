@@ -109,11 +109,14 @@
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto;
       grid-gap: $base__space-unit;
-
+      width: 100%;
       .journal-entry {
         // @include container-flex(column);
         display: grid;
-        grid-template-rows: 200px auto 52px;
+        grid-template-rows: 50vw auto 52px;
+        @include desktop{
+          grid-template-rows: 25vw auto 52px;
+        }
         padding: 0;
         margin: 0;
         border: $border-solid;
@@ -144,7 +147,7 @@
           }
         }
       }
-      @include tablet {
+      @include desktop {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
       }

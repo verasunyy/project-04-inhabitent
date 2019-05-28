@@ -26,7 +26,6 @@
   }
   .site-branding {
     height: 100%;
-
     h1 {
       background-image: url('../../assets/images/logos/inhabitent-logo-tent.svg');
       background-size: 50px 33px;
@@ -41,16 +40,12 @@
 .site-header-container.site-header-container-white {
   background: none;
   position:absolute;
-
   border-bottom: none;
   .header-container {
     .search-field{
       &::placeholder{
         color:$color__yellow-brand;
       }
-
-
-
     }
     a {
       color: #fff;
@@ -59,6 +54,11 @@
       h1 {
         background-image: url('../../assets/images/logos/inhabitent-logo-tent-white.svg');
       }
+    }
+    .menu-toggle{
+      color:#fff;
+      background:transparent;
+      border-color: #fff;
     }
 
   }

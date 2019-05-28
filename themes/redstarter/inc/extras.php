@@ -66,7 +66,8 @@ add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
 /* To change archive-product.php number of posts to show */
 
 function number_of_product_per_page($query){
-	if ( is_post_type_archive( 'product' ) ) {
+	if ( is_post_type_archive( 'product' ) && 
+		 !is_admin() && $query->is_main_query()) {
 		$query->set( 'posts_per_page', 16);
 		$query->set('order','ASC');
 		$query->set('orderby', 'meta_value_num' );
@@ -76,8 +77,10 @@ function number_of_product_per_page($query){
 	elseif(is_tax('product-type')){//need to be the name of the taxonomy
 		$query->set( 'posts_per_page', 4 );
 		return;
-	}elseif(is_post_type_archive('adventure')){
+	}elseif(is_post_type_archive('adventure') && 
+	!is_admin() && $query->is_main_query()){
 		$query->set( 'posts_per_page', 4 );
+		$query->set('order','ASC');
 		return;
 	}
 	elseif(is_search()){

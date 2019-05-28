@@ -100,22 +100,28 @@
   }
 }
 //archive page and search page
-// .archive{
-//   .site-content{
-//     .content-area{
-//       .page-header{
-//         h1{
-//           border: $border-solid;
-//           color:red;
-//           background:red;
-//         }
-//       }
-//       article{
-//         padding-top:2rem;
-//       }
-//     }
-//   }
-// }
+.archive{
+
+      .page-header{
+        border-bottom: $border-solid;
+      }
+      article{
+        margin-top:2rem;
+      }
+
+}
+.search{
+  .page-header{
+    h1{
+      padding-bottom:1.5rem;
+      border-bottom: $border-solid;
+    }
+  }
+  article{
+    margin-top:1rem;
+  }
+
+}
 
 .error404{
   ul{
@@ -135,6 +141,7 @@
     font-family: $font__accent;
     color: #fff;
     background:black;
+    line-height:0;
     img {
       line-height:0;
       max-width: none;
@@ -173,11 +180,12 @@
     .entry-meta {
       background: $color__green-brand;
       position: absolute;
-      bottom: 8px;
+      bottom: 0px;
       right: 0px;
       text-transform: uppercase;
       color: #fff;
       padding: 0rem 0.8rem;
+      line-height:normal;
       // margin-bottom: 8px;
       a {
         color: #fff;

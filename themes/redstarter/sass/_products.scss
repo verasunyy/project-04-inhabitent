@@ -28,7 +28,7 @@
     }
     .products-grid-container{
         padding-top:2.5rem;
-        width:100%;
+        // width:1000px;
         display:grid;
 
         grid-template-columns: 100%;
@@ -39,7 +39,7 @@
         }
 
         @include desktop{
-        grid-template-columns: repeat(4, calc(23.5vw - 1.5rem));
+        grid-template-columns: repeat(4, calc(25% - 1.1rem));
         grid-auto-rows: calc(24vw - 1.5rem);
         }
         grid-gap: $base__space-unit;
