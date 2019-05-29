@@ -5,9 +5,13 @@
   }
   .entry-header {
     font-family: $font__accent;
+    .adventure-thumbnail{
+      background:black;
+    }
     img {
       max-width: none;
       width: 100vw;
+      opacity: 0.7;
     }
     .entry-title,
     .entry-meta {

@@ -1763,9 +1763,12 @@ object {
 
 .single-adventure .entry-header {
   font-family: "Novecento Sans Web", sans-serif; }
+  .single-adventure .entry-header .adventure-thumbnail {
+    background: black; }
   .single-adventure .entry-header img {
     max-width: none;
-    width: 100vw; }
+    width: 100vw;
+    opacity: 0.7; }
   .single-adventure .entry-header .entry-title,
   .single-adventure .entry-header .entry-meta {
     max-width: 950px;
