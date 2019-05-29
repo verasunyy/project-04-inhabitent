@@ -1,0 +1,85 @@
+.post-type-archive-product,
+.tax-product-type {
+  .site-content {
+    .content-area {
+      width: 100vw;
+      min-width: 300px;
+      padding: 1.5rem 3rem 4rem;
+      @include container-flex();
+      flex-basis: 100%;
+    }
+  }
+  .site-main {
+    max-width: $max-screen-size;
+    width: 100%;
+  }
+  .page-header {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    border-bottom: $border-dashed;
+    .product-term {
+      font-family: $font__accent;
+      text-transform: uppercase;
+      @include font-size(1.2);
+      a {
+        padding: 1rem;
+      }
+    }
+  }
+  .products-grid-container {
+    padding-top: 2.5rem;
+    // width:1000px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 70vw;
+    @include tablet {
+      grid-template-columns: repeat(2, calc(50% - 0.75rem));
+      grid-auto-rows: calc(40vw - 0.75rem);
+    }
+    @include desktop {
+      grid-template-columns: repeat(4, calc(25% - 1.1rem));
+      grid-auto-rows: calc(24vw - 1.5rem);
+    }
+    grid-gap: $base__space-unit;
+    .single-product-container {
+      border: $border-solid;
+      margin: 0;
+      @include container-flex(column);
+      align-items: stretch;
+      .product-image {
+        flex-grow: 1;
+        height: calc(100% - 3.5rem);
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .product-title {
+        @include container-flex();
+        height: 3.5rem;
+        border-top: 5px solid #e1e1e1;
+        padding: 0.75rem 1rem;
+        .entry-title {
+          font-family: $font__main;
+          @include font-size(1);
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          &:after {
+            content: ' .............................................................................................................................................';
+          }
+        }
+        .product-price {
+          padding: 0;
+          margin: 0;
+          padding-left: 2px;
+        }
+      }
+    }
+  }
+}

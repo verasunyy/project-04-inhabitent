@@ -1,0 +1,97 @@
+//footer style
+.site-footer {
+  width: 100vw;
+  @include tablet {
+    height: 340px;
+  }
+  color: #fff;
+  @include container-flex(column);
+  background-image: url('../../assets/images/dark-wood.png');
+  h3 {
+    color: $color__orange-brand;
+    @include font-size(1.2);
+  }
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  i {
+    width: 1.7rem;
+    font-size: 1.25rem;
+  }
+  .footer-content {
+    max-width: $max-screen-size;
+    width: 100%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: $footer-padding-narrow;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+    @include desktop {
+      padding: $footer-padding-normal;
+    }
+    @include container-flex();
+    p {
+      margin-bottom: 0.5rem;
+    }
+    .contact-info {
+      flex-basis: 100%;
+      @include tablet {
+        flex-basis: 35%;
+      }
+      @include desktop {
+        flex-basis: 25%;
+      }
+      height: 100%;
+    }
+    .business-hours {
+      flex-basis: 100%;
+      height: 100%;
+      .week-day {
+        font-weight: 600;
+      }
+      @include tablet {
+        flex-basis: 35%;
+      }
+      @include desktop {
+        flex-basis: 25%;
+      }
+    }
+    .footer-logo {
+      order: -1;
+      flex-basis: 100%;
+      height: 100%;
+      @include container-flex();
+      .footer-logo-image {
+        width: 50%;
+        margin: 1.75rem 0;
+      }
+      @include tablet {
+        @include container-flex(row, flex-end, flex-start);
+        flex-basis: 30%;
+        order: 1;
+        .footer-logo-image {
+          width: 70%;
+        }
+      }
+      @include desktop {
+        flex-basis: 50%;
+        .footer-logo-image {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .site-info {
+    max-width: $max-screen-size;
+    width: 100%;
+    flex-grow: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font__accent;
+  }
+}

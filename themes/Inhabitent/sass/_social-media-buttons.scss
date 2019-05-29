@@ -1,0 +1,25 @@
+.social-media-buttons {
+  margin: 1.5rem 0;
+  button {
+    color: black;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-family: $font__accent;
+    @include font-size(0.9);
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    text-shadow: none;
+    &:hover {
+      background: $color__green-brand;
+      color: #fff;
+    }
+  }
+  i {
+    width: 1rem;
+    @include font-size(0.75);
+  }
+}

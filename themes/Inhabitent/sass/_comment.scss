@@ -1,0 +1,90 @@
+.comment-list {
+  margin-left: 0;
+  padding-left: 0;
+  .comment {
+    list-style: none;
+  }
+  .comment-body {
+    text-transform: uppercase;
+    border-top: $border-solid;
+    padding: 2rem 0;
+    @include container-flex();
+    align-items: stretch;
+    .comment-author-avatar {
+      img {
+        border-radius: 100%;
+      }
+    }
+    .comment-content {
+      flex-grow: 1;
+      padding-left: 1rem;
+      .comment-author {
+        font-weight: 600;
+        text-transform: uppercase;
+        cite {
+          font-style: normal;
+        }
+      }
+      .comment-metadata {
+        color: $color__light-grey-brand;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.comment-respond {
+  .comment-form {
+    font-family: $font__accent;
+    @include container-flex();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    label {
+      display: block;
+    }
+    .required {
+      color: $color__orange-brand;
+    }
+    input {
+      width: 100%;
+    }
+    .comment-form-comment {
+      flex-basis: 100%;
+    }
+    .comment-form-author {
+      flex-basis: 100%;
+      @include tablet {
+        flex-basis: 47%;
+      }
+    }
+    .comment-form-email {
+      flex-basis: 100%;
+      @include tablet {
+        flex-basis: 47%;
+      }
+    }
+    .comment-form-url {
+      flex-basis: 100%;
+    }
+    .comment-form-cookies-consent {
+      display: none;
+    }
+    .form-submit {
+      .submit {
+        font-family: $font__accent;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__green-brand;
+        text-transform: uppercase;
+        padding: 0.75rem 1.5rem;
+        &:hover {
+          background: $color__button-hover;
+        }
+      }
+    }
+  }
+}
